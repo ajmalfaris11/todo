@@ -1,0 +1,181 @@
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #ff007f, #007bff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px
+}
+
+.task-input,
+.time-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.time-button {
+  background-color: #333;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.add-button {
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.urgency-select-container {
+  position: relative;
+  margin-right: 10px;
+}
+
+.urgency-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.urgency-select option {
+  color: #000;
+}
+
+.urgency-select option.green-dot {
+  background-color: #333;
+  color: #00ff00;
+}
+
+.urgency-select option.yellow-dot {
+  background-color: #333;
+  color: #ffff00;
+}
+
+.urgency-select option.orange-dot {
+  background-color: #333;
+  color: #ff7f00;
+}
+
+.urgency-select option.red-dot {
+  background-color: #333;
+  color: #ff0000;
+}
+
+.todo-list,
+.completed-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item,
+.completed-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.checkbox.completed::after {
+  content: '\2713'; /* Unicode check mark */
+  position: absolute;
+  color: green;
+  font-size: 1rem;
+}
+
+.task {
+  flex-grow: 1;
+}
+
+.time {
+  margin-right: 10px;
+}
+
+.delete-icon {
+  color: red;
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Add custom styles for the Flatpickr time input */
+.flatpickr-time input {
+  background-color: #444 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+
+
+
+
+.flatpickr-calendar.hasTime .flatpickr-time {
+  height: 40px;
+  border-top: 1px solid #ff0202
+}
+
+
+
+.flatpickr-calendar.arrowTop:before {
+  border-bottom-color: #000000
+}
+
+
+.flatpickr-calendar.arrowTop:after {
+  border-bottom-color: #b11212
+}
+
+.flatpickr-calendar.hasTime .flatpickr-time {
+  height: 40px;
+  border-top: 1px solid #f60202
+}
